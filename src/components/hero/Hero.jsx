@@ -13,7 +13,7 @@ const Hero = () => {
             <p className='text-2xl text-accent text-md mb-[22px]'>
               Howdy, I'm James!
             </p>
-            <h1 className='text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]'>
+            <h1 className='text-tertiary text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]'>
               I Build & Design <br /> Web Interfaces.
             </h1>
             <p className='pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left'>

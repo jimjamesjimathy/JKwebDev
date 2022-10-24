@@ -5,7 +5,6 @@ import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Portfolio from './components/portfolio-projects/Portfolio';
 import Services from './components/services/Services';
-import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import BackTopBtn from './components/BackToTopBtn';
@@ -21,7 +20,6 @@ const App = () => {
       <Skills />
       <Portfolio />
       <Services />
-      <Testimonials />
       <Contact />
       <Footer />
       <BackTopBtn />
