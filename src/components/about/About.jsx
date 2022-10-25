@@ -6,7 +6,7 @@ const About = () => {
     <section className="section bg-primary" id="about">
       <div className="container mx-auto">
         <div className="relative flex flex-col items-center gap-24 lg:items-center xl:flex-row">
-          <div className="absolute h-[90%] left-[-3%] rounded-2xl bottom-[-1%] w-[566px] bg-tertiary opacity-30 hidden xl:block"></div>
+          <div className="absolute h-[80%] left-[-2%] rounded-2xl bottom-[5%] w-[566px] bg-tertiary opacity-30 hidden xl:block"></div>
           <img
             className="object-cover h-full max-w-[566px] hidden xl:flex lg:mx-0 rounded-2xl z-10"
             src={Image}
