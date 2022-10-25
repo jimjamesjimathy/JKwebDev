@@ -9,12 +9,12 @@ const Navbar = () => {
         {navigation.map((item, index) => {
           return (
             <li
-              className="text-white text-lg hover:text-accent  cursor-pointer"
+              className="text-paragraph uppercase text-lg hover:text-accent  cursor-pointer"
               key={index}
             >
               <Link
                 to={item.href}
-                activeClass="acive"
+                activeClass="active"
                 spy={true}
                 smooth={true}
                 duration={500}

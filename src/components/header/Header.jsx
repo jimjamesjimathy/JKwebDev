@@ -3,6 +3,8 @@ import Navbar from '../navbar/Navbar';
 import Socials from '../socials/Socials';
 import NavMobile from '../navMobile/NavMobile';
 
+import { HiOutlineDesktopComputer } from 'react-icons/hi';
+import { GiVibratingSmartphone } from 'react-icons/gi';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -16,13 +18,13 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? 'bg-tertiary h-24 shadow-md' : 'h-24'
+        bg ? 'bg-primary h-24 shadow-md' : 'h-24'
       } flex items-center fixed top-0 w-full text-white z-20 transition-all duration-300`}
     >
       <div className='container flex items-center justify-between h-full mx-auto'>
         {/* logo */}
-        <a href='/'>
-          <p>JK || WEBDEV</p>
+        <a href='/' className='font-medium text-xl'>
+          JK || WEBDEV
         </a>
         {/* nav */}
         <div className='hidden lg:block'>

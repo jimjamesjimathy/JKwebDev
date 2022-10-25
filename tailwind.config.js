@@ -27,14 +27,16 @@ module.exports = {
         contact: 'url("/src/assets/img/outline-text/contact.svg")',
       },
       colors: {
-        primary: '#161F27',
-        secondary: '#3C5368',
-        tertiary: '#253441',
+        primary: '#293241',
+        secondary: '#3D5A80',
+        tertiary: '#98C1D9',
         accent: {
-          DEFAULT: '#FFD166',
-          hover: '#E77874',
+          DEFAULT: '#F07556',
+          hover: '#F5A38F',
+          brown: '#E79A5F',
+          brownHover: '#ECB183'
         },
-        paragraph: '#F5F5F5',
+        paragraph: '#E0FBFC',
       },
     },
   },

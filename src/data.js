@@ -55,15 +55,15 @@ export const navigation = [
 // social
 export const social = [
   {
-    icon: <FiLinkedin size={25} />,
+    icon: <FiLinkedin size={30} />,
     href: "",
   },
   {
-    icon: <FiInstagram size={25} />,
+    icon: <FiInstagram size={30} />,
     href: "",
   },
   {
-    icon: <FiGithub size={25} />,
+    icon: <FiGithub size={30} />,
     href: "",
   },
 ];
@@ -99,36 +99,42 @@ export const projectsData = [
     image: Project1,
     name: "Admin Dashboard",
     category: "mobile",
+    desc: 'Administrator dashboard made with: React & Tailwind.css ',
   },
   {
     id: "2",
     image: Project2,
     name: "Literary Tavern",
     category: "mobile",
+    desc: 'Restaurant site made with: React & Sass',
   },
   {
     id: "3",
     image: Project3,
     name: "instaJam",
     category: "mobile",
+    desc: 'Social media app made with React, Redux & Material-UI',
   },
   {
     id: "4",
     image: Project4,
     name: "Hotel Booking",
     category: "web development",
+    desc: 'Hotel booking app made with: React, Context API & CSS',
   },
   {
     id: "5",
     image: Project5,
     name: "Fighting Game",
     category: "web development",
+    desc: 'Two player fighting game made with: Javascript, HTML & CSS',
   },
   {
     id: "6",
     image: Project6,
     name: "Real Estate",
     category: "web development",
+    desc: 'Real estate site made with: Next.js, framer-motion & Chakra-UI',
   },
 ];
 
@@ -177,15 +183,15 @@ export const skills = [
 // contact
 export const contact = [
   {
-    icon: <FiMail />,
+    icon: <FiMail  size={35}/>,
     title: "Have a question?",
     subtitle: "I am here to help you.",
-    description: "Email me at hello@youremail.com",
+    description: "Let's create something together!",
   },
   {
-    icon: <FiMapPin />,
+    icon: <FiMapPin  size={35}/>,
     title: "Current Location",
-    subtitle: "Bucharest, Romania",
-    description: "Serving clients worldwide",
+    subtitle: "Cleveland, OH",
+    description: "Serving clients worldwide.",
   },
 ];

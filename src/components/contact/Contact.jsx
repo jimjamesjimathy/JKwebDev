@@ -6,15 +6,14 @@ import { contact } from '../../data';
 
 const Contact = () => {
   return (
-    <section className='section bg-tertiary' id='contact'>
+    <section className='section bg-primary' id='contact'>
       <div className='container mx-auto'>
         <div className='flex flex-col items-center text-center'>
-          <h2 className='relative section-title before:content-contact before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>
-            Contact me
+          <h2 className='relative section-title font-light text-accent-hover before:content-contact before:absolute before:opacity-80 before:-top-7 before:-left-40 before:hidden before:lg:block'>
+            <span className="opacity-70">Contact me</span>
           </h2>
           <p className='subtitle'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veniam
-            labore nisium illum cupiditate reiciendis a numquam
+            I am a available for part time or full time positions, as well as any freelance work that needs to be done.
           </p>
         </div>
         <div
@@ -31,9 +30,9 @@ const Contact = () => {
                     {icon}
                   </div>
                   <div>
-                    <h4 className='mb-1 text-xl font-body'>{title}</h4>
+                    <h4 className='mb-1 text-xl font-body text-accent'>{title}</h4>
                     <p className='mb-1 text-paragraph'>{subtitle}</p>
-                    <p className='font-normal text-accent '>{description}</p>
+                    <p className='font-normal text-accent-brownHover'>{description}</p>
                   </div>
                 </div>
               );
@@ -51,7 +50,7 @@ const Contact = () => {
               className='textarea'
               placeholder='Your message'
             ></textarea>
-            <button className='btn btn-lg bg-accent hover:bg-secondary-hover'>
+            <button className='btn btn-lg border-2 border-accent-brown hover:bg-accent-brownHover hover:text-primary transition-all duration-300'>
               Send message
             </button>
           </form>
