@@ -56,15 +56,15 @@ export const navigation = [
 export const social = [
   {
     icon: <FiLinkedin size={30} />,
-    href: "",
+    href: "https://www.linkedin.com/in/jimjamesjimathy/",
   },
   {
     icon: <FiInstagram size={30} />,
-    href: "",
+    href: "https://www.instagram.com/jim.james.jimathy/",
   },
   {
     icon: <FiGithub size={30} />,
-    href: "",
+    href: "https://github.com/jimjamesjimathy",
   },
 ];
 

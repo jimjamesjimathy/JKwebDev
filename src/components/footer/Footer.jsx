@@ -10,7 +10,7 @@ const Footer = () => {
               const { href, icon } = item;
               return (
                 <div key={index} className="text-base transition-all duration-300 text-primary hover:text-tertiary">
-                  <a href={href}>{icon}</a>
+                  <a href={href} rel="noreferrer" target="_blank">{icon}</a>
                 </div>
               );
             })}

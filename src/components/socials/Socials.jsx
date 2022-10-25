@@ -9,7 +9,7 @@ const Socials = () => {
             className="flex items-center justify-center transition-all duration-300 text-accent-brown hover:text-tertiary"
             key={index}
           >
-            <a className="text-base" href={item.href}>
+            <a className="text-base" href={item.href} rel="noreferrer" target="_blank">
               {item.icon}
             </a>
           </li>

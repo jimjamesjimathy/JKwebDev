@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import heroImg from "../../assets/img/serious.webp";
 
 const Hero = () => {
@@ -14,21 +15,32 @@ const Hero = () => {
               <span className="font-light text-paragraph">, I'm James!</span>
             </p>
             <h1 className="text-[#E79A5F] text-center text-4xl leading-[44px] sm:text-center md:text-5xl md:leading-tight md:text-left lg:text-5xl lg:leading-[1.2] font-normal font-body md:tracking-[2px]">
-              I design & create <br />{" "}
-              websites and apps.
+              I design & create <br /> websites and apps.
             </h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
               I am a full-stack web developer (specializing in front-end
               development) who creates sites and applications for a range of
               different customers.
             </p>
-            <button className="flex items-center justify-between transition-all duration-300 border text-paragraph btn btn-md border-accent-brown hover:bg-accent-brownHover hover:text-primary md:btn-lg">
+            <Link
+              to='contact'
+              spy={true}
+              smooth={true}
+              duration={1100}
+              offset={-70}
+              className="flex items-center justify-between transition-all duration-300 border text-paragraph btn btn-md border-accent-brown hover:bg-accent-brownHover hover:text-primary md:btn-lg"
+            >
               let's create something together!
-            </button>
+            </Link>
           </div>
           <div className="relative items-center justify-center flex-1 hidden h-full lg:flex">
             <div className="absolute h-[27em] w-[55%] lg:bottom-[19%] lg:right-[9%] lg:w-[19em] xl:w-[20em] xl:right-[15%] xl:bottom-[19%] rounded-2xl bg-tertiary opacity-30 z-1"></div>
-            <img className="h-[55%] rounded-2xl z-10" src={heroImg} alt="" loading="lazy"/>
+            <img
+              className="h-[55%] rounded-2xl z-10"
+              src={heroImg}
+              alt=""
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
