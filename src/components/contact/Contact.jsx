@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_w8poeor",
-        "template_2p5qnp9",
+        process.env.EMAIL_SERVICE,
+        process.env.EMAIL_TEMPLATE,
         e.target,
-        "h24P0qTU2K_gGpymq"
+        process.env.EMAIL_SECRET,
       )
       .then(
         (result) => {
@@ -112,11 +112,11 @@ const Contact = () => {
               >
                 Send message
               </button>
-              <div className="w-2/3 h-full">
-                <p className=" text-center text-2xl text-[#4B7F52] font-medium">
+              <div className="flex items-center w-2/3 h-full">
+                <p className=" text-center text-2xl text-[#558B72] font-medium">
                   {success}
                 </p>
-                <p className="text-center text-red-700">{error}</p>
+                <p className="text-center text-[#D85531]">{error}</p>
               </div>
             </div>
           </form>
