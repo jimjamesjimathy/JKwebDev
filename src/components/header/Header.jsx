@@ -23,7 +23,7 @@ const Header = () => {
     >
       <div className='container flex items-center justify-between h-full mx-auto'>
         {/* logo */}
-        <a href='/' className='font-medium text-xl'>
+        <a href='/' className='text-xl font-medium'>
           JK || WEBDEV
         </a>
         {/* nav */}

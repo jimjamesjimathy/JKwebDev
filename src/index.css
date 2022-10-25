@@ -33,13 +33,13 @@
     @apply h-[48px];
   }
   .input {
-    @apply bg-paragraph text-secondary h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-2 focus:outline-secondary;
+    @apply bg-paragraph text-secondary h-[45px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-2 focus:outline-secondary;
   }
   .textarea {
-    @apply bg-paragraph resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-2 focus:outline-secondary;
+    @apply bg-paragraph text-primary resize-none w-full outline-none p-6 rounded-sm h-[150px] focus:outline focus:outline-2 focus:outline-secondary;
   }
   .active {
-    @apply text-accent-brown font-medium;
+    @apply font-medium text-accent-brown;
   }
 }
 

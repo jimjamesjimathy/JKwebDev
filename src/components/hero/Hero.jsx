@@ -6,15 +6,15 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
+      className="lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0"
     >
       <div className="container h-full mx-auto">
         <div className="flex items-center h-full pt-8">
           <div className="flex flex-col items-center flex-1 lg:items-start">
             <p className="text-2xl text-accent-brown font-medium text-md mb-[22px]">
-              Howdy<span className="text-paragraph font-light">, I'm James!</span>
+              Howdy<span className="font-light text-paragraph">, I'm James!</span>
             </p>
-            <h1 className="text-[#E79A5F] text-center text-4xl leading-[44px] sm:text-center md:text-5xl md:leading-tight md:text-left lg:text-6xl lg:leading-[1.2] font-normal font-body md:tracking-[2px]">
+            <h1 className="text-[#E79A5F] text-center text-4xl leading-[44px] sm:text-center md:text-5xl md:leading-tight md:text-left lg:text-5xl lg:leading-[1.2] font-normal font-body md:tracking-[2px]">
               I design <span className="font-primary">&</span> create <br /> websites <span className="font-primary">&</span> apps.
             </h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">

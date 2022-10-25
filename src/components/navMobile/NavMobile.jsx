@@ -1,19 +1,9 @@
 import React, { useState } from "react";
-
-// import icons
 import { XIcon } from "@heroicons/react/outline";
 import { MenuAlt3Icon } from "@heroicons/react/outline";
-
-// import navigation data
 import { navigation } from "../../data";
-
-// import components
 import Socials from "../socials/Socials";
-
-// import framer
 import { motion } from "framer-motion";
-
-// import Link
 import { Link } from "react-scroll";
 
 const NavMobile = () => {
@@ -43,11 +33,15 @@ const NavMobile = () => {
     },
   };
 
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <nav className="relative">
       <div
-        onClick={() => setIsOpen(true)}
-        className="cursor-pointer text-white"
+        onClick={handleClick}
+        className="cursor-pointer text-paragraph"
       >
         <MenuAlt3Icon className="w-8 h-8" />
       </div>
@@ -57,7 +51,7 @@ const NavMobile = () => {
         variants={circleVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
-        className="w-4 h-4 rounded-full bg-accent fixed top-0 right-0"
+        className="fixed top-0 right-0 w-4 h-4 rounded-full bg-primary"
       ></motion.div>
 
       <motion.ul
@@ -69,20 +63,21 @@ const NavMobile = () => {
         } fixed top-0 bottom-0 w-full flex flex-col justify-center items-center transition-all duration-300 overflow-hidden`}
       >
         <div
-          onClick={() => setIsOpen(false)}
-          className="cursor-pointer absolute top-8 right-8"
+          onClick={handleClick}
+          className="absolute cursor-pointer top-8 right-8"
         >
           <XIcon className="w-8 h-8" />
         </div>
         {navigation.map((item, idx) => {
           return (
-            <li key={idx} className="mb-8">
+            <li key={idx} className="mb-16">
               <Link
                 to={item.href}
                 smooth={true}
-                duration={500}
+                duration={1000}
                 offset={-70}
-                className="text-xl cursor-pointer capitalize"
+                className="text-4xl capitalize cursor-pointer"
+                onClick={handleClick}
               >
                 {item.name}
               </Link>

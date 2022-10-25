@@ -1,58 +1,125 @@
-import React from 'react';
-
+import emailjs from "@emailjs/browser";
 // import contact data
-import { contact } from '../../data';
-
+import { contact } from "../../data";
+import { useState } from "react";
 
 const Contact = () => {
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const form = document.getElementById("contact-form");
+
+    emailjs
+      .sendForm(
+        "service_w8poeor",
+        "template_2p5qnp9",
+        e.target,
+        "h24P0qTU2K_gGpymq"
+      )
+      .then(
+        (result) => {
+          setSuccess(
+            "Thank you for reaching out! I will respond as soon as possible"
+          );
+          form.reset();
+        },
+        (error) => {
+          setError(error.text);
+        }
+      );
+  };
+
   return (
-    <section className='section bg-primary' id='contact'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col items-center text-center'>
-          <h2 className='relative section-title font-light text-accent-hover before:content-contact before:absolute before:opacity-80 before:-top-7 before:-left-40 before:hidden before:lg:block'>
+    <section className="max-h-screen section bg-primary" id="contact">
+      <div className="container mx-auto">
+        <div className="flex flex-col items-center text-center">
+          <h2 className="relative font-light section-title text-accent-hover before:content-contact before:absolute before:opacity-80 before:-top-7 before:-left-40 before:hidden before:lg:block">
             <span className="opacity-70">Contact me</span>
           </h2>
-          <p className='subtitle'>
-            I am a available for part time or full time positions, as well as any freelance work that needs to be done.
+          <p className="subtitle">
+            I am a available for part time or full time positions, as well as
+            any freelance work that needs to be done.
           </p>
         </div>
-        <div
-          className='flex flex-col lg:gap-x-8 lg:flex-row'
-        >
-          <div
-            className='flex flex-col items-start flex-1 mb-12 space-y-8 lg:mb-0 lg:pt-2'
-          >
+        <div className="sm:flex lg:flex-row flex-col justify-center h-[30em] ">
+          <div className="flex-[.5] flex md:flex-row sm:pb-6 md:justify-center lg:flex-col items-center lg:justify-evenly max-w-[750px]">
             {contact.map((item, index) => {
               const { icon, title, subtitle, description } = item;
               return (
-                <div className='flex flex-col lg:flex-row gap-x-4' key={index}>
-                  <div className='flex items-start justify-center mt-2 mb-4 text-2xl rounded-sm text-accent w-14 h-14 lg:mb-0'>
+                <div
+                  className="flex-col items-center hidden w-full sm:flex md:h-full lg:h-1/2"
+                  key={index}
+                >
+                  <div className="flex items-center justify-center mt-2 mb-4 text-2xl rounded-sm text-accent w-14 h-14 lg:mb-0">
                     {icon}
                   </div>
-                  <div>
-                    <h4 className='mb-1 text-xl font-body text-accent'>{title}</h4>
-                    <p className='mb-1 text-paragraph'>{subtitle}</p>
-                    <p className='font-normal text-accent-brownHover'>{description}</p>
+                  <div className="sm:items-center sm:flex-col sm:flex sm:justify-evenly">
+                    <h4 className="mb-1 text-xl font-body text-accent">
+                      {title}
+                    </h4>
+                    <p className="mb-1 text-paragraph">{subtitle}</p>
+                    <p className="font-normal text-accent-brownHover">
+                      {description}
+                    </p>
                   </div>
                 </div>
               );
             })}
           </div>
           <form
-            className='space-y-8 w-full max-w-[780px]'
+            className="flex flex-col justify-center flex-1 space-y-8 w-full max-w-[750px]"
+            id="contact-form"
+            onSubmit={sendEmail}
           >
-            <div className='flex gap-8'>
-              <input className='input' type='text' placeholder='Your name' />
-              <input className='input' type='email' placeholder='Your email' />
+            <div className="flex gap-8">
+              <input
+                className="input"
+                id="name"
+                type="text"
+                name="from_name"
+                placeholder="Name"
+                required
+              />
+              <input
+                className="input"
+                id="email"
+                type="email"
+                name="user_email"
+                placeholder="Email"
+                required
+              />
             </div>
-            <input className='input' type='text' placeholder='Subject' />
+            <input
+              className="input"
+              id="subject"
+              type="text"
+              name="user_subject"
+              placeholder="Subject"
+              required
+            />
             <textarea
-              className='textarea'
-              placeholder='Your message'
+              className="textarea"
+              id="message"
+              name="message"
+              placeholder="Write you message here"
+              required
             ></textarea>
-            <button className='btn btn-lg border-2 border-accent-brown hover:bg-accent-brownHover hover:text-primary transition-all duration-300'>
-              Send message
-            </button>
+            <div className="flex flex-row items-center justify-center w-full gap-4 h-1/3">
+              <button
+                type="submit"
+                className="transition-all duration-300 border-2 btn btn-lg border-accent-brown hover:bg-accent-brownHover hover:text-primary"
+              >
+                Send message
+              </button>
+              <div className="w-2/3 h-full">
+                <p className=" text-center text-2xl text-[#4B7F52] font-medium">
+                  {success}
+                </p>
+                <p className="text-center text-red-700">{error}</p>
+              </div>
+            </div>
           </form>
         </div>
       </div>
