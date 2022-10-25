@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import Socials from "../socials/Socials";
+import { useState } from "react";
 import { XIcon } from "@heroicons/react/outline";
 import { MenuAlt3Icon } from "@heroicons/react/outline";
 import { navigation } from "../../data";
-import Socials from "../socials/Socials";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 

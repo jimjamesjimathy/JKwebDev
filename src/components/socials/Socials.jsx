@@ -1,5 +1,3 @@
-import React from "react";
-
 import { social } from "../../data";
 
 const Socials = () => {
@@ -8,7 +6,7 @@ const Socials = () => {
       {social.map((item, index) => {
         return (
           <li
-            className="flex items-center justify-center text-accent-brown hover:text-tertiary transition-all duration-300"
+            className="flex items-center justify-center transition-all duration-300 text-accent-brown hover:text-tertiary"
             key={index}
           >
             <a className="text-base" href={item.href}>

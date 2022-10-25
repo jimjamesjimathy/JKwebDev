@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from 'react';
-
-// import link
+import { useState, useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-// import icon
 import { ChevronUpIcon } from '@heroicons/react/outline';
 
 const BackTopBtn = () => {
@@ -19,7 +16,7 @@ const BackTopBtn = () => {
       show && (
         <button
           onClick={() => scrollToTop()}
-          className='bg-tertiary hover:bg-accent-hover text-primary w-12 h-12 rounded-full fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all'
+          className='fixed flex items-center justify-center w-12 h-12 transition-all rounded-full cursor-pointer bg-tertiary hover:bg-accent-hover text-primary right-24 bottom-24'
         >
           <ChevronUpIcon className='w-10 h-10' />
         </button>

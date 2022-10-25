@@ -1,7 +1,4 @@
-import React from 'react';
-
-// import img
-import Image from '../../assets/img/about.jpg';
+import Image from '../../assets/img/about.webp';
 
 const About = () => {
   return (
@@ -10,9 +7,10 @@ const About = () => {
         <div className='relative flex flex-col items-center gap-24 lg:items-center xl:flex-row'>
           <div className="absolute h-[90%] left-[-3%] rounded-2xl bottom-[-1%] w-[566px] bg-tertiary opacity-30 hidden xl:block"></div>
           <img
-            className='object-cover h-full max-w-[566px] hidden lg:flex lg:mx-0 rounded-2xl z-10'
+            className='object-cover h-full max-w-[566px] hidden xl:flex lg:mx-0 rounded-2xl z-10'
             src={Image}
             alt=''
+            loading="lazy"
           />
           <div className='flex flex-col items-center text-center sm:h-[31em] sm:justify-center lg:items-start lg:text-left'>
             <div className='flex flex-col'>

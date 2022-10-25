@@ -15,12 +15,12 @@ import BehanceBrandIcon from "./assets/img/brands/behance.png";
 import DribbbleBrandIcon from "./assets/img/brands/dribbble.png";
 
 // projects images
-import Project1 from "./assets/img/projects/admin-dashboard.png";
-import Project2 from "./assets/img/projects/literary.png";
-import Project3 from "./assets/img/projects/instaJam.png";
-import Project4 from "./assets/img/projects/hotel-booking.png";
-import Project5 from "./assets/img/projects/fight-game.png";
-import Project6 from "./assets/img/projects/real-estate.png";
+import Project1 from "./assets/img/projects/admin-dashboard.webp";
+import Project2 from "./assets/img/projects/literary.webp";
+import Project3 from "./assets/img/projects/instaJam.webp";
+import Project4 from "./assets/img/projects/hotel-booking.webp";
+import Project5 from "./assets/img/projects/fight-game.webp";
+import Project6 from "./assets/img/projects/real-estate.webp";
 
 // skills images
 import SkillImg1 from "./assets/img/skills/html5.png";

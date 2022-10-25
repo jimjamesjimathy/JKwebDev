@@ -1,4 +1,3 @@
-import React from "react";
 import { navigation } from "../../data";
 import { Link } from "react-scroll";
 
@@ -9,7 +8,7 @@ const Navbar = () => {
         {navigation.map((item, index) => {
           return (
             <li
-              className="text-paragraph uppercase text-lg hover:text-accent  cursor-pointer"
+              className="text-lg uppercase cursor-pointer text-paragraph hover:text-accent"
               key={index}
             >
               <Link

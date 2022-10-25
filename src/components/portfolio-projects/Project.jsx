@@ -1,18 +1,16 @@
-import React from "react";
 
 const Project = ({ item }) => {
   return (
     <div
       key={item.id}
-      className="flex flex-col items-center text-center bg-accent-brown rounded-md p-4 hover:scale-110 transiion-all duration-300 cursor-pointer"
+      className="flex flex-col items-center p-4 text-center duration-300 rounded-md cursor-pointer bg-tertiary hover:scale-110 transiion-all"
     >
       <a href={item}>
         <div>
-          <img className="rounded-md" src={item.image} alt="" />
+          <img className="w-full h-full max-h-[420px] rounded-md max-w-[800px]" src={item.image} alt="" />
         </div>
-        <p className="capitalize text-primary text-md mb-3">{item.category}</p>
-        <h3 className="text-2xl font-semibold capitalize mb-3">{item.name}</h3>
-        <p className="text-paragraph text-lg max-w-full text-center">{item.desc}</p>
+        <h3 className="mb-3 text-2xl font-semibold capitalize text-primary">{item.name}</h3>
+        <p className="max-w-full text-lg font-semibold text-center text-primary">{item.desc}</p>
       </a>
     </div>
   );

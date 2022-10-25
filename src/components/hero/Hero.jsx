@@ -1,6 +1,4 @@
-import React from "react";
-import heroImg from "../../assets/img/serious.png";
-import { motion } from "framer-motion";
+import heroImg from "../../assets/img/serious.webp";
 
 const Hero = () => {
   return (
@@ -12,10 +10,12 @@ const Hero = () => {
         <div className="flex items-center h-full pt-8">
           <div className="flex flex-col items-center flex-1 lg:items-start">
             <p className="text-2xl text-accent-brown font-medium text-md mb-[22px]">
-              Howdy<span className="font-light text-paragraph">, I'm James!</span>
+              Howdy
+              <span className="font-light text-paragraph">, I'm James!</span>
             </p>
             <h1 className="text-[#E79A5F] text-center text-4xl leading-[44px] sm:text-center md:text-5xl md:leading-tight md:text-left lg:text-5xl lg:leading-[1.2] font-normal font-body md:tracking-[2px]">
-              I design <span className="font-primary">&</span> create <br /> websites <span className="font-primary">&</span> apps.
+              I design & create <br />{" "}
+              websites and apps.
             </h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
               I am a full-stack web developer (specializing in front-end
@@ -27,10 +27,8 @@ const Hero = () => {
             </button>
           </div>
           <div className="relative items-center justify-center flex-1 hidden h-full lg:flex">
-            <motion.div
-              className="absolute h-[27em] w-[55%] lg:bottom-[19%] lg:right-[9%] lg:w-[19em] xl:w-[20em] xl:right-[15%] xl:bottom-[19%] rounded-2xl bg-tertiary opacity-30 z-1"
-            ></motion.div>
-            <img className="h-[55%] rounded-2xl z-10" src={heroImg} alt="" />
+            <div className="absolute h-[27em] w-[55%] lg:bottom-[19%] lg:right-[9%] lg:w-[19em] xl:w-[20em] xl:right-[15%] xl:bottom-[19%] rounded-2xl bg-tertiary opacity-30 z-1"></div>
+            <img className="h-[55%] rounded-2xl z-10" src={heroImg} alt="" loading="lazy"/>
           </div>
         </div>
       </div>

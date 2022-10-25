@@ -1,7 +1,6 @@
-import React from 'react';
+import loadable from '@loadable/component';
 
-// import components
-import Projects from './Projects';
+const Projects = loadable(() => import('./Projects'));
 
 const Portfolio = () => {
   return (
@@ -11,7 +10,7 @@ const Portfolio = () => {
           <h2 className='section-title text-accent-hover font-light before:content-portfolio relative before:absolute before:opacity-80 before:-top-[2rem] before:-left-[83%] before:hidden before:lg:block'>
             My latest work
           </h2>
-          <p className='subtitle text-2xl'>
+          <p className='text-2xl subtitle'>
             Here are some of my most recent projects
           </p>
         </div>

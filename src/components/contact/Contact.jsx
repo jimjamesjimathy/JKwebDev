@@ -1,5 +1,4 @@
 import emailjs from "@emailjs/browser";
-// import contact data
 import { contact } from "../../data";
 import { useState } from "react";
 
@@ -32,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="max-h-screen section bg-primary" id="contact">
+    <section className="h-screen section bg-primary" id="contact">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className="relative font-light section-title text-accent-hover before:content-contact before:absolute before:opacity-80 before:-top-7 before:-left-40 before:hidden before:lg:block">

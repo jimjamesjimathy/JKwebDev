@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
-
-// import data
+import { useState, useEffect } from "react";
 import { projectsData } from "../../data";
 import { projectsNav } from "../../data";
+import loadable from '@loadable/component';
 
-// import components
-import Project from "./Project";
+const Project = loadable(() => import('./Project'));
 
 const Projects = () => {
   const [item, setItem] = useState({ name: "featured" });
