@@ -1,35 +1,41 @@
 import React from "react";
-import heroImg from '../../assets/img/serious.png'; 
+import heroImg from "../../assets/img/serious.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section
-      id='home'
-      className='lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden'
+      id="home"
+      className="lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden"
     >
-      <div className='container h-full mx-auto'>
-        <div className='flex items-center h-full pt-8'>
-          <div className='flex flex-col items-center flex-1 lg:items-start'>
-            <p className='text-2xl text-accent text-md mb-[22px]'>
-              Howdy, I'm James!
+      <div className="container h-full mx-auto">
+        <div className="flex items-center h-full pt-8">
+          <div className="flex flex-col items-center flex-1 lg:items-start">
+            <p className="text-2xl text-accent text-md mb-[22px]">
+              Howdy, <span className="text-paragraph">I'm James!</span>
             </p>
-            <h1 className='text-tertiary text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-7xl lg:leading-[1.2] font-bold md:tracking-[-2px]'>
-              I Build & Design <br /> Web Interfaces.
+            <h1 className="text-white text-center text-4xl leading-[44px] sm:text-center md:text-5xl md:leading-tight md:text-left lg:text-6xl lg:leading-[1.2] font-normal font-primary md:tracking-[2px]">
+              I Design & Create <br /> Websites
             </h1>
-            <p className='pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left'>
-              I am a full-stack web developer (specializing in front-end development)
+            <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
+              I am a full-stack web developer (specializing in front-end
+              development) who creates sites and applications for a range of
+              different customers.
             </p>
-            <button className='transition-all btn btn-md bg-accent hover:bg-secondary-hover md:btn-lg'>
+            <button className="flex items-center justify-between transition-all duration-300 border text-paragraph btn btn-md border-accent hover:bg-accent hover:text-primary md:btn-lg">
               let's create something together!
             </button>
           </div>
-          <div className='items-end justify-end flex-1 hidden h-full lg:flex'>
-            <img className="h-[75%]" src={heroImg} alt='' />
+          <div className="relative items-center justify-center flex-1 hidden h-full lg:flex">
+            <motion.div
+              className="absolute h-[27em] w-[55%] lg:bottom-[19%] lg:right-[9%] lg:w-[19em] xl:w-[60%] xl:w-[20em] xl:right-[15%] xl:bottom-[19%] rounded-2xl bg-white opacity-10 z-1"
+            ></motion.div>
+            <img className="h-[55%] rounded-2xl z-10" src={heroImg} alt="" />
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 };
 
 export default Hero;

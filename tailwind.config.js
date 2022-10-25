@@ -12,6 +12,7 @@ module.exports = {
       },
     },
     screens: {
+      xs: '300px',
       sm: '640px',
       md: '768px',
       lg: '1024px',
@@ -26,14 +27,14 @@ module.exports = {
         contact: 'url("/src/assets/img/outline-text/contact.svg")',
       },
       colors: {
-        primary: '#151514',
-        secondary: '#252422',
-        tertiary: '#CCC5B9',
+        primary: '#161F27',
+        secondary: '#3C5368',
+        tertiary: '#253441',
         accent: {
-          DEFAULT: '#EB5E28',
+          DEFAULT: '#FFD166',
           hover: '#E77874',
         },
-        paragraph: '#878e99',
+        paragraph: '#F5F5F5',
       },
     },
   },

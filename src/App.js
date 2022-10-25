@@ -4,7 +4,6 @@ import Brands from './components/brands/Brands';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Portfolio from './components/portfolio-projects/Portfolio';
-import Services from './components/services/Services';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import BackTopBtn from './components/BackToTopBtn';
@@ -12,14 +11,13 @@ import BackTopBtn from './components/BackToTopBtn';
 
 const App = () => {
   return (
-    <div className="bg-white relative">
+    <div className="relative bg-white App">
       <Header />
       <Hero />
       <Brands />
       <About />
       <Skills />
       <Portfolio />
-      <Services />
       <Contact />
       <Footer />
       <BackTopBtn />
