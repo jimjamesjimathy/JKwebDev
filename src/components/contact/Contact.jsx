@@ -9,20 +9,23 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     const form = document.getElementById("contact-form");
-
     emailjs
       .sendForm(
-        process.env.REACT_APP_EMAIL_SERVICE,
-        process.env.REACT_APP_EMAIL_TEMPLATE,
+        "service_w8poeor",
+        "template_2p5qnp9",
         e.target,
-        process.env.REACT_APP_EMAIL_USER
+        "h24P0qTU2K_gGpymq"
       )
       .then(
         (result) => {
           setSuccess(
             "Thank you for reaching out! I will respond as soon as possible"
           );
-          form.reset();
+          setTimeout(() => {
+            form.reset();
+            setError("");
+            setSuccess("");
+          }, 5000);
         },
         (error) => {
           setError(error.text);

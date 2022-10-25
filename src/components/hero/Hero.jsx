@@ -28,7 +28,7 @@ const Hero = () => {
               smooth={true}
               duration={1100}
               offset={-70}
-              className="flex items-center justify-between transition-all duration-300 border text-paragraph btn btn-md border-accent-brown hover:bg-accent-brownHover hover:text-primary md:btn-lg"
+              className="flex items-center justify-between transition-all duration-300 border cursor-pointer text-paragraph btn btn-md border-accent-brown hover:bg-accent-brownHover hover:text-primary md:btn-lg"
             >
               let's create something together!
             </Link>

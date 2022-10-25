@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import loadable from "@loadable/component";
+import { Link } from "react-scroll";
 
 const Navbar = loadable(() => import("../navbar/Navbar"));
 const Socials = loadable(() => import("../socials/Socials"));
 const NavMobile = loadable(() => import("../navMobile/NavMobile"));
-
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -23,9 +23,14 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between h-full mx-auto">
         {/* logo */}
-        <a href="/" className="text-xl font-medium">
+        <Link
+          to='home'
+          smooth={true}
+          duration={1100}
+          className="text-xl font-semibold tracking-widest transition-all duration-300 cursor-pointer text-accent hover:text-paragraph"
+        >
           JK || WEBDEV
-        </a>
+        </Link>
         {/* nav */}
         <div className="hidden lg:block">
           <Navbar />
