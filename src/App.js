@@ -1,5 +1,4 @@
 import loadable from '@loadable/component';
-
 const Header = loadable(() => import('./components/header/Header'));
 const Hero = loadable(() => import('./components/hero/Hero'));
 const Brands = loadable(() => import('./components/brands/Brands'));

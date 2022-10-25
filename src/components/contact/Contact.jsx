@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        process.env.EMAIL_SERVICE,
-        process.env.EMAIL_TEMPLATE,
+        process.env.REACT_APP_EMAIL_SERVICE,
+        process.env.REACT_APP_EMAIL_TEMPLATE,
         e.target,
-        process.env.EMAIL_SECRET,
+        process.env.REACT_APP_EMAIL_USER
       )
       .then(
         (result) => {
