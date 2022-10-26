@@ -2,7 +2,7 @@ import { brands } from "../../data";
 
 const Brands = () => {
   return (
-    <section className="min-h-[147px] bg-accent flex items-center justify-center">
+    <section className="min-h-[15vh] bg-accent flex items-center justify-center">
       <div className="container flex flex-wrap items-center justify-around w-full">
         {brands.map((brand, index) => {
           return (

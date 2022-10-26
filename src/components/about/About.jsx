@@ -3,8 +3,8 @@ import Image from "../../assets/img/about.webp";
 
 const About = () => {
   return (
-    <section className="h-[46em] section bg-primary" id="about">
-      <div className="container mx-auto">
+    <section className="h-[73vh] section bg-primary" id="about">
+      <div className="container flex items-center justify-center mx-auto">
         <div className="relative flex flex-col items-center gap-24 lg:items-center xl:flex-row">
           <div className="absolute h-[80%] left-[-2%] rounded-2xl bottom-[5%] w-[566px] bg-tertiary opacity-30 hidden xl:block"></div>
           <img
@@ -13,7 +13,7 @@ const About = () => {
             alt=""
             loading="lazy"
           />
-          <div className="flex flex-col items-center text-center sm:h-[31em] sm:justify-center lg:items-start lg:text-left">
+          <div className="flex flex-col items-center text-center h-[31em] justify-center lg:items-start lg:text-left">
             <div className="flex flex-col">
               <h2 className="text-3xl text-accent-hover lg:text-4xl font-medium lg:font-light mb-3 before:content-about relative before:absolute before:opacity-80 before:-top-[2.3rem] before:-left-[1rem] before:hidden before:lg:block">
                 <span className="opacity-80">James Kirkwood</span>
