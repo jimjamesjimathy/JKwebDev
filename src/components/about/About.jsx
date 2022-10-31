@@ -3,7 +3,7 @@ import Image from "../../assets/img/about.webp";
 
 const About = () => {
   return (
-    <section className="h-[73vh] lg:h-screen xl:h-screen section bg-primary" id="about">
+    <section className="h-[73vh] sm:h-[75.5vh] section bg-primary" id="about">
       <div className="container flex items-center justify-center mx-auto">
         <div className="relative flex flex-col items-center gap-24 lg:items-center xl:flex-row">
           <div className="absolute h-[80%] left-[-2%] rounded-2xl bottom-[5%] w-[566px] bg-tertiary opacity-30 hidden xl:block"></div>

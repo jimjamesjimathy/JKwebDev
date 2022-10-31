@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="h-[13em] bg-accent-hover">
       <div className="container flex items-center justify-center h-full mx-auto">
-        <div className="flex flex-col items-center w-full h-full justify-evenly md:flex-row">
+        <div className="flex flex-col items-center w-full h-full justify-evenly md:justify-between md:flex-row">
           <div className="flex items-center justify-center space-x-6">
             {social.map((item, index) => {
               const { href, icon } = item;
