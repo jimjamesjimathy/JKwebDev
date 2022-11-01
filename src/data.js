@@ -80,7 +80,7 @@ export const brands = [
   },
   {
     img: FiverBrandIcon,
-    href: "www.fiverr.com/jimjamesjimathy",
+    href: "https://www.fiverr.com/jimjamesjimathy",
   },
   {
     img: BehanceBrandIcon,
