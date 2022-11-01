@@ -7,7 +7,9 @@ const Brands = () => {
         {brands.map((brand, index) => {
           return (
             <div key={index}>
-              <img src={brand.img} className="h-[55px] w-[100%]" alt="" />
+              <a href={brand.href} rel='noreferrer' target='_blank'>
+              <img src={brand.img} className="h-[55px] w-[100%] hover:scale-125 transition-all duration-300" alt="" />
+              </a>
             </div>
           );
         })}

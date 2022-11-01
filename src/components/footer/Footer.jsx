@@ -22,8 +22,8 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <p className="flex items-center font-bold sm:text-md lg:text-xl text-primary">
-              <span className="text-sm">&copy;</span> 2022 James Kirkwood
+            <p className="flex items-end font-bold sm:text-md lg:text-xl text-primary">
+              <span className="mr-2 text-sm">&copy;</span> 2022 James Kirkwood
             </p>
           </div>
         </div>

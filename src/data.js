@@ -18,7 +18,7 @@ import DribbbleBrandIcon from "./assets/img/brands/dribbble.png";
 import Project1 from "./assets/img/projects/admin-dashboard.webp";
 import Project2 from "./assets/img/projects/literary.webp";
 import Project3 from "./assets/img/projects/instaJam.webp";
-import Project4 from "./assets/img/projects/hotel-booking.webp";
+import Project4 from "./assets/img/projects/eCommerce.webp";
 import Project5 from "./assets/img/projects/fight-game.webp";
 import Project6 from "./assets/img/projects/real-estate.webp";
 
@@ -72,23 +72,23 @@ export const social = [
 export const brands = [
   {
     img: FreelancerBrandIcon,
-    href: "",
+    href: "https://www.freelancer.com/u/jimjamesjimathy",
   },
   {
     img: UpworkBrandIcon,
-    href: "",
+    href: "https://www.upwork.com/freelancers/~017caf55e4d9d7408d",
   },
   {
     img: FiverBrandIcon,
-    href: "",
+    href: "www.fiverr.com/jimjamesjimathy",
   },
   {
     img: BehanceBrandIcon,
-    href: "",
+    href: "https://www.behance.net/jameskirkwood3",
   },
   {
     img: DribbbleBrandIcon,
-    href: "",
+    href: "https://dribbble.com/jimjamesjimathy",
   },
 ];
 
@@ -99,42 +99,48 @@ export const projectsData = [
     image: Project1,
     name: "Admin Dashboard",
     category: "mobile",
-    desc: 'Administrator dashboard made with: React & Tailwind.css ',
+    link: 'https://admin-dashboard-murex-iota.vercel.app/',
+    desc: 'Languages: React & Tailwind.css ',
   },
   {
     id: "2",
     image: Project2,
     name: "Literary Tavern",
     category: "mobile",
-    desc: 'Restaurant site made with: React & Sass',
+    link: 'https://restaurant-site-one.vercel.app/',
+    desc: 'Languages: React & Sass',
   },
   {
     id: "3",
     image: Project3,
     name: "instaJam",
     category: "mobile",
-    desc: 'Social media app made with React, Redux & Material-UI',
+    link: 'https://insta-jam.vercel.app/posts',
+    desc: 'Languages: React, Redux & Material-UI',
   },
   {
     id: "4",
     image: Project4,
-    name: "Hotel Booking",
+    name: "e-commerce",
     category: "web development",
-    desc: 'Hotel booking app made with: React, Context API & CSS',
+    link: 'https://e-commerce-zeta-lake.vercel.app',
+    desc: 'Languages: React, JavaScript & styled components'
   },
   {
     id: "5",
     image: Project5,
     name: "Fighting Game",
     category: "web development",
-    desc: 'Two player fighting game made with: Javascript, HTML & CSS',
+    link: 'https://fight-mania.vercel.app',
+    desc: 'Languages: Javascript, HTML & CSS',
   },
   {
     id: "6",
     image: Project6,
     name: "Real Estate",
     category: "web development",
-    desc: 'Real estate site made with: Next.js, framer-motion & Chakra-UI',
+    link: 'https://real-estate-mauve-phi.vercel.app',
+    desc: 'Languages: Next.js, framer-motion & Chakra-UI',
   },
 ];
 
