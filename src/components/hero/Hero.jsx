@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import heroImg from "../../assets/img/serious.webp";
+import heroImg from "../../assets/img/hero.webp";
 
 const Hero = () => {
   return (
