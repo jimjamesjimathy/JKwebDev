@@ -18,8 +18,8 @@ const Hero = () => {
               I design & create <br /> websites and apps.
             </h1>
             <p className="pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left">
-              I am a full-stack web developer (specializing in front-end
-              development) who creates sites and applications for a range of
+              I am a full-stack developer (specializing in front-end
+              development) who creates websites, applications, and games for a range of
               different customers.
             </p>
             <Link
