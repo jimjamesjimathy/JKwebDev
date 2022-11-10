@@ -24,8 +24,7 @@ const About = () => {
               <hr className="mb-8 opacity-5" />
               <p className="xs:w-[90vw] sm:w-auto mb-8">
                 I am originally from San Marcos, TX, but I currently reside in
-                Cleveland, OH. I have my sights set on moving to Seattle, WA
-                just as soon as I land my first position in tech.
+                Cleveland, OH, and have my sights set on moving to Seattle, WA as soon as possible
                 <br />
                 <br />
                 Outside of the coding world I like to keep busy. I play 5
